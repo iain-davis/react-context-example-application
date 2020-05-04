@@ -1,6 +1,7 @@
 import React from 'react'
-import App from './App'
 import {shallow} from 'enzyme'
+
+import App from './App'
 import {PersonContextProvider} from './PersonContext/PersonContext'
 
 describe('App', () => {
