@@ -8,4 +8,12 @@ describe('PersonContextProvider', () => {
 
         expect(provider).toBeEmptyRender()
     })
+
+    it('renders child components', () => {
+        const provider = mount(<PersonContextProvider>
+            <p>Exciting Content</p>
+        </PersonContextProvider>)
+
+        expect(provider.find('p').text()).toEqual('Exciting Content')
+    })
 })
