@@ -4,7 +4,7 @@ export type Person = {
     name: string
 }
 
-const defaultPerson = {name: ''}
+const defaultPerson: Person = {name: ''}
 export const PersonContext = React.createContext(defaultPerson)
 
 export function PersonContextProvider(properties: { initialPerson: Person, children?: ReactNode }) {
