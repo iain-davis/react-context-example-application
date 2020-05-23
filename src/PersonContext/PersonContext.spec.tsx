@@ -17,7 +17,7 @@ describe('PersonContextProvider', () => {
         expect(provider.find('p').text()).toEqual('Exciting Content')
     })
 
-    it('provides the person', () => {
+    it('provides the person context', () => {
         const person: Person = {name: 'name'}
 
         const provider = mount(<PersonContextProvider initialPerson={person}><TestPersonConsumingComponent/></PersonContextProvider>)
